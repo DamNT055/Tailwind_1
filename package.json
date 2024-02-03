@@ -1,0 +1,24 @@
+{
+    "scripts": {
+        "build": "postcss ./input.css -o ./output.css",
+        "watch": "postcss ./input.css -o ./output.css --watch",
+        "serve": "concurrently \"postcss ./input.css -o output.css --watch\"  \"live-server ./\"",
+        "production": "postcss ./input.css -o ./output.css",
+        "prettier": "prettier --write .",
+        "start": "npm run serve"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.17",
+        "concurrently": "^8.2.2",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "live-server": "^1.2.2",
+        "postcss": "^8.4.33",
+        "postcss-cli": "^11.0.0",
+        "postcss-import": "^16.0.0",
+        "postcss-nested": "^6.0.1",
+        "prettier": "^3.2.4",
+        "prettier-plugin-tailwindcss": "^0.5.11",
+        "tailwindcss": "^3.4.1"
+    }
+}
