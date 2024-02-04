@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/output.css">
+</head>
+
+<body>
+    <div class="container mt-8">
+        When controlling the flow of text, using the CSS property <span
+            class="inline font-bold  text-blue-500  bg-red-200">display:
+            inline</span> will
+        cause
+        the text
+        inside the element
+        to wrap normally.
+        <br>
+        While using the property <span class="inline-block font-bold text-blue-500 bg-red-200">display:
+            inline-block</span> will wrap the element to
+        prevent the text
+        inside from extending
+        beyond its parent.
+        <br>
+        Lastly, using the property
+        <span class="inline-block font-bold text-red-800 bg-zinc-200">display: block</span>
+        will put the element on its own line and fill its parent.
+    </div>
+
+    <div class="p-4">
+        <div class="flow-root">
+            <div class="my-4">Well, let me tell you something</div>
+        </div>
+        <div class="flow-root">
+            <div class="my-4">Sure, go ahead, laugh if you want...</div>
+        </div>
+    </div>
+
+    <div class="p-5">
+        <div class="flex items-center">
+            <img class="aspect-video h-1/2 w-1/2" src="/img/landscape/photo5.jpg" alt="">
+            <div>
+                <strong>Andrew Alfred</strong>
+                <span>Technical advisor</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-2">
+        <p>Today I spent most of the day researching ways to take advantage of the fact that
+            <span class="inline-flex items-baseline">
+                <img class="self-center w-8 h-8 rounded-full mx-1" src="/img/woman.jpg" alt="">
+                <span>Kamas</span>
+            </span>
+            bottles can be returned for 10 cents in Michigan, but only 5 cents here.
+        </p>
+    </div>
+</body>
+
+</html>
