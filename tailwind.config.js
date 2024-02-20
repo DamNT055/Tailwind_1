@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./*.{html,js}", "./src/**/*.{html,js}"],
+    content: [
+        "./*.{html,js}",
+        "./src/**/*.{html,js}",
+        "node_modules/preline/dist/*.js",
+    ],
     theme: {
         extend: {
             aspectRatio: {
@@ -13,6 +17,9 @@ module.exports = {
                 "4xs": "14rem",
             },
         },
+        fontFamily: {
+            awesome: ["fontAwesome"],
+        },
     },
-    plugins: [],
+    plugins: [require("@tailwindcss/forms"), require("preline/plugin")],
 };
